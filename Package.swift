@@ -5,7 +5,9 @@ import PackageDescription
 let package = Package(
 	name: "PerfectCURL",
 	platforms: [
-		.macOS(.v10_15)
+		.iOS(.v10),
+		.macOS(.v10_15),
+		.tvOS(.v11)
 	],
 	products: [.library(name: "PerfectCURL", targets: ["PerfectCURL"])],
 	dependencies: [
